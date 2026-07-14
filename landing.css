@@ -1,0 +1,86 @@
+/* ==========================================
+   Responsive Design
+========================================== */
+
+@media (max-width: 992px){
+
+.hero-section{
+    min-height:65vh;
+    padding:60px 0;
+}
+
+.hero-section h1{
+    font-size:2.3rem;
+}
+
+.hero-lead{
+    font-size:0.95rem;
+}
+
+}
+
+@media (max-width:768px){
+
+.navbar-brand{
+    font-size:0.95rem;
+}
+
+.navbar-brand img{
+    height:26px;
+}
+
+.hero-section{
+    min-height:70vh;
+    padding:70px 20px;
+}
+
+.hero-section h1{
+    font-size:2rem;
+}
+
+.hero-lead{
+    font-size:0.9rem;
+    max-width:100%;
+}
+
+.hero-section .d-flex{
+    flex-direction:column;
+    gap:15px !important;
+}
+
+.btn-purple-action{
+    width:100%;
+    max-width:280px;
+}
+
+.icon-circle{
+    margin:auto;
+}
+
+.feature-p{
+    max-width:100%;
+}
+
+footer .row{
+    text-align:center;
+}
+
+footer .col-md-5,
+footer .col-md-4,
+footer .col-md-3{
+    justify-content:center !important;
+}
+
+}
+
+@media (max-width:576px){
+
+.hero-section h1{
+    font-size:1.75rem;
+}
+
+.hero-lead{
+    font-size:0.85rem;
+}
+
+}

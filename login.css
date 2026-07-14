@@ -1,0 +1,199 @@
+/* ==========================================================
+   RESPONSIVE DESIGN
+   ========================================================== */
+
+/* ---------- Tablet ---------- */
+@media (max-width: 992px) {
+
+.login-left-premium{
+    min-height:45vh;
+    padding:60px 30px !important;
+}
+
+.login-right{
+    padding:50px 30px !important;
+}
+
+.hero-subtext{
+    max-width:500px;
+    margin:auto;
+}
+
+.auth-form-card{
+    max-width:500px !important;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width:768px){
+
+.login-container{
+    flex-direction:column !important;
+}
+
+.login-left-premium{
+
+    min-height:45vh;
+    padding:40px 25px !important;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.brand-showcase{
+    margin:0 auto;
+}
+
+.uitm-custom-logo{
+    width:90px;
+}
+
+.login-left-premium h2{
+    font-size:1.8rem;
+}
+
+.hero-subtext{
+    font-size:0.9rem;
+    max-width:320px;
+}
+
+.row.g-3{
+    margin-top:30px;
+}
+
+.grid-title{
+    font-size:.75rem;
+}
+
+.grid-desc{
+    font-size:.7rem;
+}
+
+.login-right{
+
+    padding:40px 20px !important;
+
+}
+
+.auth-form-card{
+
+    max-width:100% !important;
+
+}
+
+.btn-outline-purple{
+
+    font-size:.85rem;
+
+}
+
+.btn-purple-block{
+
+    height:48px;
+
+}
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:576px){
+
+.login-left-premium{
+
+    min-height:40vh;
+
+    padding:35px 20px !important;
+
+}
+
+.uitm-custom-logo{
+
+    width:75px;
+
+}
+
+.login-left-premium h2{
+
+    font-size:1.5rem;
+
+}
+
+.hero-subtext{
+
+    font-size:.82rem;
+
+}
+
+.icon-circle-translucent{
+
+    width:38px;
+    height:38px;
+
+    font-size:1rem;
+
+}
+
+.grid-title{
+
+    font-size:.70rem;
+
+}
+
+.grid-desc{
+
+    display:none;
+
+}
+
+.login-right{
+
+    padding:30px 18px !important;
+
+}
+
+.auth-form-card h2{
+
+    font-size:1.7rem;
+
+}
+
+.input-group-custom{
+
+    height:46px;
+
+}
+
+.btn-purple-block{
+
+    height:46px;
+
+}
+
+}
+
+/* ---------- Very Small Phones ---------- */
+
+@media (max-width:400px){
+
+.login-left-premium{
+
+    min-height:38vh;
+
+}
+
+.hero-subtext{
+
+    display:none;
+
+}
+
+.grid-desc{
+
+    display:none;
+
+}
+
+}
