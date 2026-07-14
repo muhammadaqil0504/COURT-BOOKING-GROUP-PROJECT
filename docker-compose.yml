@@ -5,7 +5,7 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - ./public:/var/www/html    # <--- Change this line to look inside your public folder!
+      - ./public:/var/www/html   
     command: sh -c "docker-php-ext-install pdo pdo_mysql && apache2-foreground"
     environment:
       - DB_HOST=db
