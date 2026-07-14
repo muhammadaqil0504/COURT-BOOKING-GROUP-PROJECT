@@ -1,10 +1,12 @@
 FROM php:8.2-apache
 
-# Install required PHP extensions
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Copy all project files into Apache's document root
 COPY . /var/www/html/
 
-# Start Apache
+RUN sed -ri -e 's!/var/www/html!/var/www/html/public!g' \
+    /etc/apache2/sites-available/*.conf \
+    /etc/apache2/apache2.conf \
+    /etc/apache2/conf-available/*.conf
+
 CMD ["apache2-foreground"]
