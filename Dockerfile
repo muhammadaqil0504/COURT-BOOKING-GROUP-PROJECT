@@ -1,9 +1,12 @@
-FROM php:8.2-apache
+FROM node:20-alpine
 
-# Install PHP MySQL extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+WORKDIR /usr/src/app
 
-# Copy ONLY the contents of the public folder
-COPY public/ /var/www/html/
+COPY package*.json ./
+RUN npm install
 
-CMD ["apache2-foreground"]
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
